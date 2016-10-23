@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_reports_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/typeofreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <Spinner
+                android:id="@+id/kindofreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:id="@+id/lals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/reports_from"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/reports_to"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick Date"
+                    android:textColor="#fff"
+	                android:background="#1fae66"
+	                android:layout_margin="5dp" />
+
+                <Button
+                    android:id="@+id/btn_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick Date"
+                    android:textColor="#fff"
+	                android:background="#1fae66"
+	                android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tv_generate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reports_generate"
+                android:textColor="#fff"
+                android:background="#1fae66"
+                android:layout_margin="5dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/tv_chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/rounded_rectangle_button"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </ScrollView>

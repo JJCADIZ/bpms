@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/employee_tv_reports_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/employee_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/employee_typeofreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/employee_kindofreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+			<LinearLayout
+                android:id="@+id/lals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/employee_tv_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/reports_from"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/employee_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/reports_to"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/employee_btn_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick Date"
+                    android:textColor="#fff"
+	                android:background="#1fae66"
+	                android:layout_margin="5dp" />
+
+                <Button
+                    android:id="@+id/employee_btn_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick Date"
+                    android:textColor="#fff"
+	                android:background="#1fae66"
+	                android:layout_margin="5dp" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/employee_tv_generate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reports_generate"
+                android:textColor="#fff"
+                android:background="#1FAE66"
+                android:layout_margin="5dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/employee_tv_chart"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </ScrollView>

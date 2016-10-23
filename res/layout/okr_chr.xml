@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea" >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obj"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edtChrObj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:textColor="#55596b"
+        android:textColorHint="#9D9DA0"
+        android:background="#E5E5E5">
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dept2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000" 
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnDept"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Add" 
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:background="#1fae66"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtDepartments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:editable="false"
+        android:padding="10dp"
+        android:textColor="#55596b"
+        android:textColorHint="#9D9DA0"
+        android:background="#E5E5E5"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btnAddObj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF" 
+        android:background="#1fae66"
+/>
+
+</LinearLayout>

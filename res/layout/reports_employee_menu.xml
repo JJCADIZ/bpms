@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reports Menu"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/employee_okr_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_button"
+                android:text="OKR Reports"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/employee_a3_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A3 Project Reports"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/employee_pathfinder_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pathfinder Reports"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+            <Button
+                android:id="@+id/employee_tv_reports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time and Volume Reports"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

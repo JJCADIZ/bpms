@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/asdf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10sp"
+            android:text="Tracker"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_product"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_margin="5dp"/>
+
+        <Spinner
+            android:id="@+id/tracker_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#55596b"
+	        android:textColorHint="#9D9DA0"
+            android:background="#1fae66" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sub_process"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp"
+             />
+
+        <Spinner
+            android:id="@+id/tracker_subprocess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#55596b"
+	        android:textColorHint="#9D9DA0"
+            android:background="#1fae66"  />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_activity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp" />
+
+        <Spinner
+            android:id="@+id/tracker_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#55596b"
+	        android:textColorHint="#9D9DA0"
+            android:background="#1fae66"   />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_volume"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="5dp" />
+
+        <Spinner
+            android:id="@+id/tracker_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#55596b"
+	        android:textColorHint="#9D9DA0"
+            android:background="#1fae66"   />
+
+        <Button
+            android:id="@+id/tracker_main_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tracker_play"
+            android:background="#1FAE66"
+            android:textColor="#FFF" 
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

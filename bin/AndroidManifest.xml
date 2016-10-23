@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bpm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="20" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application
+        android:name="SetID" 
+        android:allowBackup="true"
+        android:icon="@drawable/greeniconv3white"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.example.bpm.NotifyBroadcast"
+            android:enabled="true">
+		     <intent-filter>
+		          <action android:name="android.intent.action.BOOT_COMPLETED"/>
+		     </intent-filter>
+		</receiver>
+	   <service 
+            	android:stopWithTask="false"
+                android:enabled="true"
+                android:name=".NotifyService"  >
+        </service>
+        
+        <activity
+            android:name="com.example.bpm.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.bpm.Swiper"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.OtherActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PathfinderActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3Activity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.TimeAndVolumeActivity"
+            android:label="@string/app_name" > 
+            </activity>
+             <activity
+            android:name="com.example.bpm.TabbedFragment"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PathfinderUpdate"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PathfinderUpdateMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.Profile"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.ProfileUpdate"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3UpdateMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.AddMemberActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.AddApprovers"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.AddDepartmentActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.OkrChrUpdateMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.OkrKeyDirActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.OkrKrDirAddActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.OkrDirLinkObj"
+            android:label="@string/app_name" > 
+            </activity>
+             <activity
+            android:name="com.example.bpm.A3ActionPlanView"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3ActionPlanMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3ActionPlanProgress"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3SuccessCriteriaView"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3SuccessCriteriaAdd"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3SuccessCriteriaEdit"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PromotionDirActivity"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PromotionChrMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.PromotionDirActivityMain"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.A3Comment"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:name="com.example.bpm.TimeandVolume"
+            android:label="@string/app_name" > 
+            </activity>
+            <activity
+            android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.trackerActivity"
+            android:label="Tracker" > 
+            </activity>
+            <activity
+            android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.pausedActivity"
+            android:label="Paused List" > 
+            </activity>
+          	<activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.runningActivity"
+            android:label="Running Activity" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.myreportActivity"
+            android:label="My Report" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.employeereportActivity"
+            android:label="Employee Report" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.PathfinderComments"
+            android:label="Pathfinder Comments" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.ChrDirectorReport"
+            android:label="Director Report" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/back_arrow"
+            android:name="com.example.bpm.ChrEmployeeReport"
+            android:label="Employee Report" > 
+            </activity>
+            <activity
+          	android:icon="@drawable/greeniconv3white"
+            android:name="com.example.bpm.PerformanceEvaluation"
+            android:label="Performance Evaluation" > 
+            </activity>
+    </application>
+    
+
+</manifest>

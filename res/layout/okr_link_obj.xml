@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:background="#eaeaea">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/objname"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edtObjNameLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#55596b"
+        android:textColorHint="#9D9DA0"
+        android:background="#E5E5E5" 
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinImpactLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/okrimpact" />
+
+    <Button
+        android:id="@+id/btnObjLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/link" 
+        android:paddingTop="10dp"
+        android:background="#1fae66"
+        android:textColor="#fff"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/tvLinked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objective has already been linked"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

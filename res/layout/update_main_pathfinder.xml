@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="782dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/edtideaname2"
+                        android:paddingTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="@string/idea"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+				        android:background="#E5E5E5"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinner12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/ideatype"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp" />
+
+                    <EditText
+                        android:id="@+id/edtbenefit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/benefit"
+                        android:inputType="numberDecimal"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+				        android:background="#E5E5E5"
+                        android:textSize="16sp"
+                        android:textStyle="normal" 
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinner22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/benefittype"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp" />
+
+                    <EditText
+                        android:id="@+id/edyobservation2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:ems="10"
+                        android:hint="@string/observation"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+				        android:background="#E5E5E5"
+                        android:textSize="16sp"
+                        android:textStyle="normal" 
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp"/>
+
+                    <EditText
+                        android:id="@+id/edtquickwin2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:ems="10"
+                        android:hint="@string/quickwin"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textColor="#55596b"
+				        android:textColorHint="#9D9DA0"
+				        android:background="#E5E5E5"
+                        android:textSize="16sp"
+                        android:textStyle="normal" 
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp" 
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbbar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tvApprove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btndelete"
+                    android:layout_below="@+id/pbbar2"
+                    android:text="@string/approved"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0494b2"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/target2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvApprove"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textColor="#55596b"
+			        android:textColorHint="#9D9DA0"
+			        android:background="#E5E5E5"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tvtarget2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/target2"
+                    android:layout_alignLeft="@+id/tvApprove"
+                    android:text="@string/target"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#55596b"
+			        android:textColorHint="#9D9DA0"
+			        android:background="#E5E5E5"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvApproved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/target2"
+                    android:layout_below="@+id/pbbar2"
+                    android:text="@null"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#55596b"
+        			android:textColorHint="#9D9DA0"
+        			android:background="#E5E5E5"
+                    android:textSize="18sp"
+                    android:textStyle="normal" 
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btndelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2dp"
+                    android:layout_marginBottom="47dp"
+                    android:background="#1fae66"
+                    android:text="@string/delete"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnApprove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btndelete"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/btndelete"
+                    android:layout_margin="2dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="#1fae66"
+                    android:text="@string/approve"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnApprove"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="2dp"
+                    android:background="#1fae66"
+                    android:padding="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/update"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvtarget2"
+                    android:layout_marginTop="23dp"
+                    android:text="View Comments"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/btnPathComments"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignLeft="@+id/target2"
+                    android:textColor="#fff"
+                    android:background="#1fae66"
+                    android:text="View" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

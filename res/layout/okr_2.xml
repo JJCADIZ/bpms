@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:background="#eaeaea">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/objname"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/edtAddObjDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="4dp"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#55596b"
+        android:textColorHint="#9D9DA0"
+        android:background="#E5E5E5"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinImpact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:entries="@array/okrimpact"
+        android:textColorHint="#9D9DA0"
+        />
+
+    <Button
+        android:id="@+id/btnAddOkrDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Objective"
+        android:background="#1fae66"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <ListView
+        android:id="@+id/lstobjper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

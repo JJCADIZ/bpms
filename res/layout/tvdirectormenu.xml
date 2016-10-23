@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Time and Volume Menu"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/director_tracker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_button"
+                android:text="@string/track_activity"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/director_running"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/running_activity"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/director_paused"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paused_activity"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+            
+            <Button
+                android:id="@+id/director_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Report"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+            
+            <Button
+                android:id="@+id/director_employee_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Employee Report"
+                android:background="@drawable/rounded_rectangle_button"
+                android:textColor="#000"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

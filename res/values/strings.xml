@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JFC</string>
+    <string name="action_settings">Settings</string>
+    <string name="empID">Employee ID</string>
+    <string name="pass">Password</string>
+    <string name="login_msg">LOGIN TO YOUR ACCOUNT</string>
+    <string name="login">JFC | BPMS</string>
+    <string name="login_btn">Log in</string>
+    <string name="logout">Log Out</string>
+    <string name="success">Log in Success!</string>
+    <string name="banner">JFC LOGIN:</string>
+    <string name="uname">Username</string>
+    <string name="observation">Observation</string>
+    <string name="quickwin">Proposed Quick Win</string>
+    <string name="add">Add</string>
+    <string name="penda3">Pending Forms</string>
+    <string name="penda4">Pending Closures</string>
+    <string name="blank"></string>
+    
+    <string-array name="okrimpact">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+    
+    <string name="desc">Description:</string>
+    <string name="own">Owner:</string>
+    <string name="action">Action Plan</string>
+    <string name="title">Title:</string>
+    <string name="progress">Progress:</string>
+    <string name="percent">Percentage</string>
+    <string name="criteria">Success Criteria</string>
+    <string name="current">Current:</string>
+    <string name="targ">Target:</string>
+    
+    <string name="sum">Summary</string>
+    <string name="view_obj">View Objective</string>    
+    
+    <string name="add_obj">Add Objectives</string>
+    <string name="obj">Objective:</string>
+    <string name="dept2">Departments:</string>
+    
+    
+    <string name="update">Update</string>
+    <string name="remove">Remove</string>
+    <string name="approve">Approve</string>
+    <string name="approved">Approved?</string>
+    
+    <string name="add_path">Add Form</string>
+    <string name="view">View Forms</string>
+    <string name="del_path">Remove Form</string>
+    <string name="delete">Remove</string>
+    <string name="refresh">Refresh</string>
+    
+    <!-- Time and Volume -->
+    <string name="track_activity">Tracker</string>
+    <string name="running_activity">Running Activity</string>
+    <string name="paused_activity">Paused List</string>
+    <string name="employee_list">Employee List</string>
+    <string name="director_list">Director List</string>
+    
+    <string name="timer">00:00:00:00</string>
+    <string name="tracker_stop">Stop</string>
+    <string name="tracker_pause">Pause</string>
+    <string name="tracker_play">Play</string>
+    
+    <string name="lbl_product">Product</string>
+    <string name="lbl_sub_process">Sub Process</string>
+    <string name="lbl_activity">Activity</string>
+    <string name="lbl_volume">Volume</string>
+    
+    <string name="float_tv_play">Play</string>
+    <string name="float_tv_stop">Stop</string>
+    <string name="float_tv_cancel">Cancel</string>
+    <string name="back_button">Back</string>
+    <!-- End Time and Volume -->
+    
+    <!-- Reports -->
+    <string name="reports_okr">OKR</string>
+    <string name="reports_a3">A3 Projects</string>
+    <string name="reports_pathfinder">Pathfinder</string>
+    <string name="reports_time_and_volume">Time and Volume</string>
+    <string name="reports_from">From</string>
+    <string name="reports_to">To</string>
+    <string name="reports_generate">Generate</string>
+    <!-- End Reports -->
+    <string name="fname">First Name:</string>
+    <string name="lname">Last Name:</string>
+    <string name="dept">Department:</string>
+    <string name="email">Email:</string>
+    <string name="username">Username:</string>
+    <string name="pass2">Password:</string>
+    <string name="user2">Username:</string>
+    
+    <string name="projName">Project Name</string>
+    <string name="background">Background Statement</string>
+    <string name="recommendation">Recommendation/Strategy</string>
+    <string name="vision">Vision/Objective</string>
+    <string name="issues">Issues/Roadblocks</string>
+    <string name="members">Members</string>
+    <string name="director">Director:</string>
+    <string name="coach">Project Coach</string>
+    
+    <string name="filter">Filter:</string>
+    
+    <string name="target">target date:</string>
+    <string name="due">Due date:</string>
+    <string name="year">Year:</string>
+    <string name="objleft">Objectives left:</string>
+    <string name="objname">Objective Name:</string>
+    <string name="kr">Key Results:</string>
+    <string name="krr">Key Result</string>
+    <string name="impact">KR Impact</string>
+    <string name="link">Link Objective</string>
+	
+    <string name="emp">Employee:</string>
+    <string name="promotion">Promotions Page</string>
+    <string name="recommend">Recommendation</string>
+    <string name="recommend_hint">STATE THE REASON FOR THE PROMOTION OF THIS EMPLOYEE.</string>
+    <string name="promote">Send promotion request</string>
+    <string name="position">Position:</string>
+    <string name="promoteNow">Promote</string>
+    <string name="promoteTo">Promote to:</string>
+    <string name="endorsed">Endorsed by:</string>
+    <string name="promoteEmpNow">Promote Employee</string>
+    
+    <string name="idea">Idea Name</string>
+    <string name="benefit">Refer to benefit computation tab</string>
+    
+    <string-array name="ideatype">
+        <item >Cost Savings</item>
+        <item >Efficiency Improvement</item>
+        <item >Controls Improvement</item>
+        <item >Service Quality Improvement</item>
+        <item >Process simplification/improvement</item>
+    </string-array>
+    
+    <string-array name="benefittype">
+        <item >Soft</item>
+        <item >Hard</item>
+    </string-array>
+    
+    <string-array name="duration">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
+    
+    
+   <string-array name="nav_drawer_items">
+        <item >My Profile</item>
+        <item >Pathfinder</item>
+        <item >OKR</item>
+        <item >Time and Volume</item>
+        <item >A3 Template</item>
+        <item >Reports</item>
+        <item >Promotions</item>
+        <item >Notifications</item>
+        <item >Log Out</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    	<array name="nav_drawer_icons">
+	        <item>@drawable/icon_profile</item>
+	        <item>@drawable/icon_pathfinder</item>
+	        <item>@drawable/icon_okr</item>
+	        <item>@drawable/icon_timeandvolume</item>
+	        <item>@drawable/icon_a3</item>
+	        <item>@drawable/icon_reports</item>
+	        <item>@drawable/icon_promotions</item>
+	        <item>@drawable/icon_notification</item>
+	        <item>@drawable/icon_logout</item>
+	    </array>
+    
+    <!-- Content Description -->
+    
+    <string name="desc_list_item_icon">Item Icon</string>
+ 
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+</resources>

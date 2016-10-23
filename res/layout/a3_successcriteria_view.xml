@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/criteria"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#55596b"
+        android:textColorHint="#9D9DA0"
+        android:background="#E5E5E5"/>
+
+    <Button
+        android:id="@+id/btnAddCriteria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#1fae66"
+        android:textColor="#FFFFFF"/>
+
+    <ListView
+        android:id="@+id/lstCriteria"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
